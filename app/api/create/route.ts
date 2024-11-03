@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import fs from "node:fs";
 import path from "node:path";
-import cfCheck from "../../utils/cfCheck";
+import {cfCheck} from "../../utils/cfCheck";
 import {
     localExecutablePath,
     isDev,
