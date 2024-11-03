@@ -49,7 +49,7 @@ export async function GET(request) {
         await page.setUserAgent(userAgent);
         await page.setViewport({ width: 1920, height: 1080 });
         const preloadFile = fs.readFileSync(
-            path.join(process.cwd(), "/src/utils/preload.js"),
+            path.join(process.cwd(), "/app/utils/preload.js"),
             "utf8"
         );
         await page.evaluateOnNewDocument(preloadFile);
